@@ -1,0 +1,40 @@
+@import "../../styles/global.scss";
+
+.projects {
+  padding-bottom: 80px;
+
+  &__row2 {
+    margin-top: 30px;
+  }
+
+  &__project1,
+  &__project2 {
+    width: 100%;
+    height: 750px;
+    // height: 60%;
+    object-fit: cover;
+  }
+
+  &__project3-wrapper {
+    margin-bottom: 30px;
+  }
+
+  &__project3 {
+    width: 100%;
+    height: 695px;
+    object-fit: cover;
+  }
+
+  &__project4 {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+  }
+
+  &__project5 {
+    width: 100%;
+    height: 1275px;
+    // height: 60%;
+    object-fit: cover;
+  }
+}

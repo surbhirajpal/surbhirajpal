@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Placeholder:wght@400;500;600;700&display=swap");
+
+$primary-color: #1890ff;
+
+// Ant Design overrides (optional)
+// @import "~antd/dist/antd.variable.less";
+
+// Global resets
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+  background-color: #f0efed;
+  display: block;
+  padding: 42px 0;
+  height: auto;
+}
+
+#root {
+  width: 100%;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+}

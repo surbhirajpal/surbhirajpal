@@ -1,0 +1,47 @@
+.sustainFeed {
+  &__problem-content {
+    background-color: #282828;
+    padding: 30px;
+    border-radius: 40px;
+    color: #fff;
+    height: 100%;
+    text-align: center;
+  }
+
+  &__research-content {
+    background-color: #d2d2d2;
+    padding: 30px 60px;
+    border-radius: 40px;
+    height: 100%;
+  }
+
+  &__prototype-text {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 12px;
+  }
+
+  &__result{
+    &-text {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 40px;
+      // color: #fff;
+      height: 100%;
+      text-align: center;
+
+      &.center {
+      display: flex;
+      align-items: center;
+    }
+    }
+
+    .project__section-description {
+      margin-bottom: 60px;
+    }
+
+    img {
+      margin-bottom: 30px;
+    }
+  }
+}

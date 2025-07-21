@@ -4,9 +4,6 @@ import "./Hero.scss";
 export default function Hero() {
   return (
     <div className="hero">
-      <p className="hero__title">
-        Surbhi Rajpal <span className="hero__subtitle">- UI/UX Designer</span>
-      </p>
       <div className="hero__content">
         <h1>{'I craft seamless digital experiences—fusing creativity, thoughtful UX, and purposeful design.'}</h1>
 

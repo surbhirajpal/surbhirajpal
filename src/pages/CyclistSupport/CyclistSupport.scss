@@ -1,0 +1,79 @@
+.cycle {
+  &__design-thinking-image {
+    width: 80%;
+    margin: auto;
+  }
+
+  &__research {
+    &-card {
+      padding: 30px 40px;
+      border-radius: 40px;
+      background-color: #d1e8fb;
+      font-size: 18px;
+
+      p {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &-stats {
+    color: #188aec;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  &__insights {
+    li {
+      margin-bottom: 24px;
+    }
+  }
+
+  .slick-dots li button {
+    background: rgb(195, 195, 195) !important; /* default dot color */
+    opacity: 1;
+  }
+
+  .slick-dots li.slick-active button {
+    background: black !important; /* active dot color */
+    opacity: 1;
+  }
+
+  &__high-fed {
+    margin: 0;
+    padding: 0;
+    height: 400vh; /* Enough height to scroll */
+  }
+
+  .scroll-section {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text{
+        position: absolute;
+        right: 0;
+        font-size: 18px;
+        width: 40%;
+    }
+  }
+
+  .image-wrapper {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .animated-image {
+    width: 300px;
+    object-fit: cover;
+    transform-origin: top center;
+  }
+}

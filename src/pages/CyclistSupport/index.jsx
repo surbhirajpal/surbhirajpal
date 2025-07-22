@@ -204,6 +204,9 @@ export default function CyclistSupport() {
         </div>
         <Divider />
 
+        <img src='/project4/screens.png'/>
+        <Divider/>
+
         <div className="cycle__persona">
           <Carousel autoplay={true} className="custom-carousel">
             <div>
@@ -243,7 +246,7 @@ export default function CyclistSupport() {
 
         <p className="project__section-description">
           {
-            "Note: Only key screens are displayed here to safeguard the full design. Reach out to me for an in-depth preview."
+            "Note: Only key screens are displayed here to safeguard the full design. Reach out for an in-depth preview."
           }
         </p>
       </div>

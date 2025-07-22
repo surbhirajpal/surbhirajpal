@@ -23,12 +23,15 @@ export default function DbNavigator() {
 
           <p className="project__section-title">{"1. OVERVIEW"}</p>
           <p className="project__section-description">
-            {
-              "This case study showcases how innovation was balanced with practicality to enhance the DB Navigator app - bringing clarity, speed, and convenience to an already trusted rail network. Explore the design decisions, tools, and processes that shaped a more accessible, human-centered travel experience for Deutsche Bahn passengers."
-            }
+            This case study showcases how innovation was balanced with
+            practicality to enhance the DB Navigator app - bringing clarity,
+            speed, and convenience to an already trusted rail network. Explore
+            the design decisions, tools, and processes that shaped a more
+            accessible, human-centered travel experience for Deutsche Bahn
+            passengers.
           </p>
-          <div className="db__hero-img">
-                      <img src="/project1/hero.png"/>
+          <div className="project__hero-img">
+            <img src="/project1/hero.png" />
           </div>
         </div>
         <Divider />
@@ -39,9 +42,14 @@ export default function DbNavigator() {
             {"A snapshot of whats ahead."}
           </p>
           <p className="project__section-description">
-            {
-              "Deutsche Bahn's DB Navigator app is the company's flagship mobile tool for planning and managing train travel across one of Europe's largest and most meticulously maintained rail networks. Despite Deutsche Bahn's reputation for extensive coverage, punctuality, and dependable service, the DB Navigator app falls short of the same level of seamlessness and intuitive interaction—making it harder than necessary for passengers to quickly discover connections, compare ticket options, and complete their bookings."
-            }
+            Deutsche Bahn's DB Navigator app is the company's flagship mobile
+            tool for planning and managing train travel across one of Europe's
+            largest and most meticulously maintained rail networks. Despite
+            Deutsche Bahn's reputation for extensive coverage, punctuality, and
+            dependable service, the DB Navigator app falls short of the same
+            level of seamlessness and intuitive interaction, making it harder
+            than necessary for passengers to quickly discover connections,
+            compare ticket options, and complete their bookings.
           </p>
         </div>
         <Divider />
@@ -62,7 +70,7 @@ export default function DbNavigator() {
           <p className="project__section-subtitle">
             {"Turning pain points into polished experiences."}
           </p>
-          <Row gutter={60} align={'top'} justify={'space-around'}>
+          <Row gutter={60} align={"top"} justify={"space-around"}>
             <Col span={8}>
               <h2>{"Challenges"}</h2>
               <ul>
@@ -90,7 +98,7 @@ export default function DbNavigator() {
               <ul>
                 <li>
                   {
-                    "Simplify the app’s navigation with a streamlined menu and quick-access shortcuts."
+                    "Simplify the app's navigation with a streamlined menu and quick-access shortcuts."
                   }
                 </li>
 
@@ -102,12 +110,12 @@ export default function DbNavigator() {
 
                 <li>
                   {
-                    "Provide a live train tracking dashboard—shareable with friends and family."
+                    "Provide a live train tracking dashboard, shareable with friends and family."
                   }
                 </li>
                 <li>
                   {
-                    "Add a “Connect to Agent” chat or call feature for real-time support."
+                    "Feature to conenct with DB authorities for real-time support."
                   }
                 </li>
               </ul>
@@ -116,7 +124,7 @@ export default function DbNavigator() {
         </div>
         <Divider />
 
-        <div className="db__info-arch">
+        {/* <div className="db__info-arch">
           <p className="project__section-title">
             {"5. INFORMATION ARCHITECTURE"}
           </p>
@@ -125,14 +133,14 @@ export default function DbNavigator() {
           </p>
           <img src="/project1/info-arch.png" />
         </div>
-        <Divider />
+        <Divider /> */}
 
         <div className="db__design-system">
-          <p className="project__section-title">{"6. DESIGN SYSTEM"}</p>
+          <p className="project__section-title">{"5. DESIGN SYSTEM"}</p>
           <p className="project__section-subtitle">
             {"Consistent components, cohesive experience."}
           </p>
-          <Row gutter={60} align={'center'} justify={'space-around'}>
+          <Row gutter={60} align={"center"} justify={"space-around"}>
             <Col span={10}>
               <img src="/project1/color-typo.png" />
             </Col>
@@ -142,7 +150,6 @@ export default function DbNavigator() {
           </Row>
         </div>
         <Divider />
-
 
         <div className="db__low-fed">
           <p className="project__section-title">
@@ -168,7 +175,6 @@ export default function DbNavigator() {
         </div>
         <Divider />
 
-
         <div className="db__low-fed-results">
           <p className="project__section-title">
             {"7. LOW FIDELITY PROTOTYPE TESTING"}
@@ -176,15 +182,17 @@ export default function DbNavigator() {
           <p className="project__section-subtitle">
             {"Early feedback to refine the experience."}
           </p>
-          <Row gutter={60} align={'top'} justify={'space-around'}>
+          <Row gutter={60} align={"top"} justify={"space-around"}>
             <Col span={8}>
               <h2>{"UT1 Findings"}</h2>
               <ul>
-                <li>{"Users struggled to find purchased tickets."}</li>
+                <li>{"Login compulsion to complete payment process."}</li>
 
-                <li>{"Seat selection required too much scrolling."}</li>
+                <li>
+                  {"Lack of clear navigation to access purchased ticket."}
+                </li>
 
-                <li>{"Login felt unnecessary."}</li>
+                <li>{"Endless scrolling for seat selection."}</li>
               </ul>
             </Col>
             <Col span={8}>
@@ -225,7 +233,11 @@ export default function DbNavigator() {
         </div>
         <Divider />
 
-        <p className="project__section-description">{'Note: Only key screens are displayed here to safeguard the full design. Reach out to me for an in-depth preview.'}</p>
+        <p className="project__section-description">
+          {
+            "Note: Only key screens are displayed here to safeguard the full design. Reach out for an in-depth preview."
+          }
+        </p>
       </div>
     </motion.div>
   );

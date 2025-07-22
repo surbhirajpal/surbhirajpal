@@ -351,7 +351,7 @@ export default function EnhancingBonds() {
 
         <p className="project__section-description">
           {
-            "Note: Only key screens are displayed here to safeguard the full design. Reach out to me for an in-depth preview."
+            "Note: Only key screens are displayed here to safeguard the full design. Reach out for an in-depth preview."
           }
         </p>
       </div>

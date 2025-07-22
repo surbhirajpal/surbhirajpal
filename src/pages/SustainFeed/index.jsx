@@ -32,7 +32,7 @@ export default function SustainFeed() {
             testing with real users, and measuring impact.
           </p>
           <div className="project__hero-img">
-            <img src="/project3/hero.png" />
+            <img src="/sustainFeed/hero.png" />
           </div>
         </div>
         <Divider />
@@ -115,7 +115,7 @@ export default function SustainFeed() {
               </p>
             </Col>
             <Col span={10}>
-              <img src="/project3/design-process.png" />
+              <img src="/sustainFeed/design-process.png" />
             </Col>
           </Row>
         </div>
@@ -195,14 +195,14 @@ export default function SustainFeed() {
           </p>
           <Row gutter={0} align={"top"} justify={"space-around"}>
             <Col span={4}>
-              <img src="/project3/screen-1.png" />
+              <img src="/sustainFeed/screen-1.png" />
               <p className="sustainFeed__prototype-text">
                 Our food donation app seamlessly connects donors with those in
                 need, providing a user-friendly platform to share surplus food.
               </p>
             </Col>
             <Col span={4}>
-              <img src="/project3/screen-2.png" />
+              <img src="/sustainFeed/screen-2.png" />
               <p className="sustainFeed__prototype-text">
                 Empower generosity in seconds! Our intuitive donation screen
                 allows users to effortlessly add and contribute items they wish
@@ -210,7 +210,7 @@ export default function SustainFeed() {
               </p>
             </Col>
             <Col span={4}>
-              <img src="/project3/screen-3.png" />
+              <img src="/sustainFeed/screen-3.png" />
               <p className="sustainFeed__prototype-text">
                 Review your impact at a glance! Our Donation Overview screen
                 provides a comprehensive view of the items you're about to
@@ -218,7 +218,7 @@ export default function SustainFeed() {
               </p>
             </Col>
             <Col span={4}>
-              <img src="/project3/screen-4.png" />
+              <img src="/sustainFeed/screen-4.png" />
               <p className="sustainFeed__prototype-text">
                 Review your total donations and their social impact, then
                 effortlessly download your tax redemption certificate to reap
@@ -226,7 +226,7 @@ export default function SustainFeed() {
               </p>
             </Col>
             <Col span={4}>
-              <img src="/project3/screen-4.png" />
+              <img src="/sustainFeed/screen-4.png" />
               <p className="sustainFeed__prototype-text">
                 Students can reserve donated meals for the next day and pick
                 them up from the school canteen, ensuring convenient access to
@@ -251,7 +251,7 @@ export default function SustainFeed() {
           <Row gutter={60} align={"stretch"} justify={"space-around"}>
             <Col span={8}>
               <div className="sustainFeed__result-text">
-                <img src="/project3/result-1.png" />
+                <img src="/sustainFeed/result-1.png" />
                 <p className="text">
                   <strong>“SustainFeed”</strong> created awareness for child
                   hunger among <strong>38.5%</strong> of user group.
@@ -274,7 +274,7 @@ export default function SustainFeed() {
             </Col>
             <Col span={8}>
               <div className="sustainFeed__result-text">
-                <img src="/project3/result-2.png" />
+                <img src="/sustainFeed/result-2.png" />
                 <p className="text">
                   <strong>46.2%</strong> of users felt more motivated to donate
                   specifically to address child hunger after using{" "}

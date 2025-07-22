@@ -28,7 +28,7 @@ export default function EnhancingBonds() {
             }
           </p>
           <div className="project__hero-img">
-            <img src="/project2/hero.png" />
+            <img src="/nui/hero.png" />
           </div>
         </div>
         <Divider />
@@ -71,7 +71,7 @@ export default function EnhancingBonds() {
             </Col>
 
             <Col span={8}>
-              <img src="/project2/chi.png" />
+              <img src="/nui/chi.png" />
             </Col>
           </Row>
         </div>
@@ -114,10 +114,10 @@ export default function EnhancingBonds() {
           </p>
 
           <div className="nui__persona-1">
-            <img src="/project2/persona-1.png" />
+            <img src="/nui/persona-1.png" />
           </div>
           <div className="nui__persona-2">
-            <img src="/project2/persona-2.png" />
+            <img src="/nui/persona-2.png" />
           </div>
         </div>
         <Divider />
@@ -287,7 +287,7 @@ export default function EnhancingBonds() {
           </p>
           <Row gutter={60} align={"middle"} justify={"space-around"}>
             <Col span={8}>
-              <img src="/project2/test-result.png" />
+              <img src="/nui/test-result.png" />
             </Col>
             <Col span={8}>
               <h2>{"Heart Rate Monitoring Adjustments:"}</h2>
@@ -317,7 +317,7 @@ export default function EnhancingBonds() {
         <Divider />
 
         <div className="nui__results">
-          <img src="/project2/result.png" />
+          <img src="/nui/result.png" />
         </div>
         <Divider />
 

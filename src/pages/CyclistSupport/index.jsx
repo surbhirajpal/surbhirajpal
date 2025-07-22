@@ -20,7 +20,7 @@ export default function CyclistSupport() {
 
         <div className="cycle__hero">
           <h1 className="project__hero-title">
-            {"Digital Support Systems for Cyclists"}
+            {"PedalPal: Digital Support Systems for Cyclists"}
           </h1>
 
           <p className="project__section-title">{"1. OVERVIEW"}</p>
@@ -34,7 +34,7 @@ export default function CyclistSupport() {
             causing distraction.
           </p>
           <div className="project__hero-img">
-            <img src="/project4/hero.png" />
+            <img src="/cyclist/hero.png" />
           </div>
         </div>
         <Divider />
@@ -60,7 +60,7 @@ export default function CyclistSupport() {
             Journey from insight to solution.
           </p>
           <div className="cycle__design-thinking-image">
-            <img src="/project4/design-thinking.png" />
+            <img src="/cyclist/design-thinking.png" />
           </div>
         </div>
         <Divider />
@@ -133,7 +133,7 @@ export default function CyclistSupport() {
           </p>
           <Row gutter={60} align={"middle"} justify={"space-around"}>
             <Col span={12}>
-              <img src="/project4/insights.png" />
+              <img src="/cyclist/insights.png" />
             </Col>
             <Col span={12}>
               <ul>
@@ -171,10 +171,10 @@ export default function CyclistSupport() {
           </p>
           <Carousel autoplay={true} className="custom-carousel">
             <div>
-              <img src="/project4/persona-1.png" />
+              <img src="/cyclist/persona-1.png" />
             </div>
             <div>
-              <img src="/project4/persona-2.png" />
+              <img src="/cyclist/persona-2.png" />
             </div>
           </Carousel>
         </div>
@@ -188,7 +188,7 @@ export default function CyclistSupport() {
             Early sketches to validate core interactions.{" "}
           </p>
           <div className="cycle__design-thinking-image">
-            <img src="/project4/low-fed.png" />
+            <img src="/cyclist/low-fed.png" />
           </div>
         </div>
         <Divider />
@@ -204,40 +204,40 @@ export default function CyclistSupport() {
         </div>
         <Divider />
 
-        <img src='/project4/screens.png'/>
+        <img src='/cyclist/screens.png'/>
         <Divider/>
 
         <div className="cycle__persona">
           <Carousel autoplay={true} className="custom-carousel">
             <div>
-              <img src="/project4/scenario1.png" />
+              <img src="/cyclist/scenario1.png" />
             </div>
             <div>
-              <img src="/project4/scenario2.png" />
+              <img src="/cyclist/scenario2.png" />
             </div>
             <div>
-              <img src="/project4/scenario3.png" />
+              <img src="/cyclist/scenario3.png" />
             </div>
             <div>
-              <img src="/project4/scenario4.png" />
+              <img src="/cyclist/scenario4.png" />
             </div>
             <div>
-              <img src="/project4/scenario5.png" />
+              <img src="/cyclist/scenario5.png" />
             </div>
             <div>
-              <img src="/project4/scenario6.png" />
+              <img src="/cyclist/scenario6.png" />
             </div>
             <div>
-              <img src="/project4/scenario7.png" />
+              <img src="/cyclist/scenario7.png" />
             </div>
             <div>
-              <img src="/project4/scenario8.png" />
+              <img src="/cyclist/scenario8.png" />
             </div>
             <div>
-              <img src="/project4/scenario9.png" />
+              <img src="/cyclist/scenario9.png" />
             </div>
             <div>
-              <img src="/project4/scenario10.png" />
+              <img src="/cyclist/scenario10.png" />
             </div>
           </Carousel>
         </div>

@@ -31,7 +31,7 @@ export default function DbNavigator() {
             passengers.
           </p>
           <div className="project__hero-img">
-            <img src="/project1/hero.png" />
+            <img src="/db/hero.png" />
           </div>
         </div>
         <Divider />
@@ -61,7 +61,7 @@ export default function DbNavigator() {
           <p className="project__section-subtitle">
             {"Empathy-driven steps to user-centric solutions."}
           </p>
-          <img src="/project1/design-thinking.png" />
+          <img src="/db/design-thinking.png" />
         </div>
         <Divider />
 
@@ -131,7 +131,7 @@ export default function DbNavigator() {
           <p className="project__section-subtitle">
             {"Structuring content for effortless exploration."}
           </p>
-          <img src="/project1/info-arch.png" />
+          <img src="/db/info-arch.png" />
         </div>
         <Divider /> */}
 
@@ -142,10 +142,10 @@ export default function DbNavigator() {
           </p>
           <Row gutter={60} align={"center"} justify={"space-around"}>
             <Col span={10}>
-              <img src="/project1/color-typo.png" />
+              <img src="/db/color-typo.png" />
             </Col>
             <Col span={14}>
-              <img src="/project1/icons.png" />
+              <img src="/db/icons.png" />
             </Col>
           </Row>
         </div>
@@ -161,15 +161,15 @@ export default function DbNavigator() {
           <Row gutter={30}>
             <Col span={8}>
               <p>{""}</p>
-              <img src="/project1/low-fed-1.png" />
+              <img src="/db/low-fed-1.png" />
             </Col>
             <Col span={8}>
               <p>{""}</p>
-              <img src="/project1/low-fed-2.png" />
+              <img src="/db/low-fed-2.png" />
             </Col>
             <Col span={8}>
               <p>{""}</p>
-              <img src="/project1/low-fed-3.png" />
+              <img src="/db/low-fed-3.png" />
             </Col>
           </Row>
         </div>
@@ -220,15 +220,15 @@ export default function DbNavigator() {
           </p>
           <div className="db__high-fed-section">
             <p>{""}</p>
-            <img src="/project1/high-fed-1.png" />
+            <img src="/db/high-fed-1.png" />
           </div>
           <div className="db__high-fed-section">
             <p>{""}</p>
-            <img src="/project1/high-fed-2.png" />
+            <img src="/db/high-fed-2.png" />
           </div>
           <div className="db__high-fed-section">
             <p>{""}</p>
-            <img src="/project1/high-fed-3.png" />
+            <img src="/db/high-fed-3.png" />
           </div>
         </div>
         <Divider />

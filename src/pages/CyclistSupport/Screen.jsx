@@ -69,7 +69,7 @@ const StickyScrollImage = () => {
     <section ref={sectionRef} className="scroll-section">
       <div className="image-wrapper">
         <motion.img
-          src="/project4/mainScreen.png"
+          src="/cyclist/mainScreen.png"
           alt="Animated"
           style={{ scale, x: translateX, y: translateY }}
           className="animated-image"

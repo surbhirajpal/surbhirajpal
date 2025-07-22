@@ -1,7 +1,3 @@
-export const SiemensHealthineers = () => {
-    return(
-        <div>
-
-        </div>
-    );
-};
+export default function SiemensHealthineers() {
+  return <div></div>;
+}

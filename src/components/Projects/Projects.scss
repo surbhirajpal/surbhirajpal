@@ -75,24 +75,6 @@
     }
   }
 
-  .tilt-card {
-    .tilt-card-text{
-      position: absolute;
-      opacity: 0;
-      transition: opacity 600ms;
-      font-size: 40px;
-      font-weight: bold;
-      color: #fff;
-      margin-bottom: 0;
-    }
-
-    &:hover {
-      .tilt-card-text{
-        opacity: 1;
-      }
-    }
-  }
-
   .coming-soon{
     position: absolute;
     bottom: 10%;
@@ -102,5 +84,11 @@
     color: #fff;
     font-size: 18px;
     padding: 10px 0;
+  }
+
+  .navigate{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
   }
 }

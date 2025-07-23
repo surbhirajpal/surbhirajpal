@@ -18,34 +18,6 @@
 
   &__help {
     margin-top: 24px;
-  }
-
-  &__connect {
-    h2 {
-      margin-top: 24px;
-    }
-  }
-
-  &__link {
-    display: flex;
-    color: #111111;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    font-size: 18px;
-    cursor: pointer;
-    transition: color 0.5s ease;
-
-    &:hover {
-      color: grey;
-      .anticon-arrow-right {
-        transform: rotate(0deg);
-      }
-    }
-
-    .anticon-arrow-right {
-      transition: transform 0.5s ease;
-      transform: rotate(-45deg);
-    }
+    margin-bottom: 24px;
   }
 }

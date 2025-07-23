@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Divider, Row, Col } from "antd";
 
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 import "./DbNavigator.scss";
 
@@ -13,9 +14,9 @@ export default function DbNavigator() {
       transition={{ duration: 0.6 }}
       className="project db"
     >
-      <div className="container">
-        <Header />
+      <Header subtitle="DB Navigator" />
 
+      <div className="container">
         <div className="db__hero">
           <h1 className="project__hero-title">
             {"DB Navigator App 2.0 - Case Study"}
@@ -239,6 +240,7 @@ export default function DbNavigator() {
           }
         </p>
       </div>
+      <Footer project="db"/>
     </motion.div>
   );
 }

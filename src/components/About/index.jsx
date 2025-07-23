@@ -1,5 +1,7 @@
 import { Divider, Row, Col } from "antd";
 import { ArrowRightOutlined } from "@ant-design/icons";
+import Connect from "../Connect/index";
+
 import "./About.scss";
 
 export default function Hero() {
@@ -52,7 +54,9 @@ export default function Hero() {
           </Row>
         </div>
 
-        <div className="about__connect">
+        <Connect />
+
+        {/* <div className="about__connect">
           <Row gutter={30}>
             <Col span={6}>
               <h2>{"Let's Connect"}</h2>
@@ -83,7 +87,7 @@ export default function Hero() {
               </a>
             </Col>
           </Row>
-        </div>
+        </div> */}
       </div>
       <Divider />
     </>

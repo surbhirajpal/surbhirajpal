@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Divider, Row, Col } from "antd";
 
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 import "./SustainFeed.scss";
 
@@ -13,9 +14,9 @@ export default function SustainFeed() {
       transition={{ duration: 0.6 }}
       className="project sustainFeed"
     >
-      <div className="container">
-        <Header />
+      <Header subtitle="Sustain Feed" />
 
+      <div className="container">
         <div className="sustainFeed__hero">
           <h1 className="project__hero-title">
             Sustain Feed: Turning surplus meals into nourishment for children in
@@ -292,6 +293,7 @@ export default function SustainFeed() {
           }
         </p>
       </div>
+      <Footer project="sustainFeed" />
     </motion.div>
   );
 }

@@ -1,0 +1,28 @@
+.connect {  
+  &__link {
+    display: flex;
+    color: #111111;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: grey;
+      .anticon-arrow-right {
+        transform: rotate(0deg);
+      }
+    }
+
+    .anticon-arrow-right {
+      transition: transform 0.5s ease;
+      transform: rotate(-45deg);
+    }
+  }
+
+  .ant-divider {
+    margin: 24px 0 !important;
+  }
+}

@@ -1,0 +1,32 @@
+.siemens{
+    &__problem{
+        &-card{
+            background-color: black;
+            padding: 30px 20px;
+            font-size: 18px;
+            color: #ffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            height: 100%;
+            border-radius: 40px;
+            text-align: center;
+
+            img{
+                width: 100px;
+                height: fit-content;
+            }
+
+            p{
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    &__solution{
+        li{
+            margin-bottom: 24px;
+        }
+    }
+}

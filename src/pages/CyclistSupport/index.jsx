@@ -2,12 +2,13 @@ import { motion } from "framer-motion";
 import { Divider, Row, Col, Carousel } from "antd";
 
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+
 import Screen from "./Screen";
 
 import "./CyclistSupport.scss";
 
 export default function CyclistSupport() {
-  
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -15,9 +16,9 @@ export default function CyclistSupport() {
       transition={{ duration: 0.6 }}
       className="project cycle"
     >
-      <div className="container">
-        <Header />
+      <Header subtitle="PedalPal" />
 
+      <div className="container">
         <div className="cycle__hero">
           <h1 className="project__hero-title">
             {"PedalPal: Digital Support Systems for Cyclists"}
@@ -204,8 +205,8 @@ export default function CyclistSupport() {
         </div>
         <Divider />
 
-        <img src='/cyclist/screens.png'/>
-        <Divider/>
+        <img src="/cyclist/screens.png" />
+        <Divider />
 
         <div className="cycle__persona">
           <Carousel autoplay={true} className="custom-carousel">
@@ -242,7 +243,6 @@ export default function CyclistSupport() {
           </Carousel>
         </div>
         <Divider />
-        
 
         <p className="project__section-description">
           {
@@ -250,6 +250,7 @@ export default function CyclistSupport() {
           }
         </p>
       </div>
+      <Footer project="pedalPal" />
     </motion.div>
   );
 }

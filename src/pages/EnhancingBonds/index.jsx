@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Divider, Row, Col } from "antd";
 
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 import "./EnhancingBonds.scss";
 
@@ -13,9 +14,9 @@ export default function EnhancingBonds() {
       transition={{ duration: 0.6 }}
       className="project nui"
     >
-      <div className="container">
-        <Header />
+      <Header subtitle="Little Links" />
 
+      <div className="container">
         <div className="nui__hero">
           <h1 className="project__hero-title">
             {"Enhancing Bonds Remotely: With Multi-sensory NUI "}
@@ -355,6 +356,7 @@ export default function EnhancingBonds() {
           }
         </p>
       </div>
+      <Footer project="littleLinks" />
     </motion.div>
   );
 }

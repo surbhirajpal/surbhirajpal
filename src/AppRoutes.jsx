@@ -7,6 +7,7 @@ import EnhancingBonds from "./pages/EnhancingBonds";
 import SiemensHealthineers from "./pages/SiemensHealthineers";
 import SustainFeed from "./pages/SustainFeed";
 import CyclistSupport from "./pages/CyclistSupport";
+import About from "./pages/About";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -32,6 +33,8 @@ export default function App() {
         <Route path="/sustain-feed" element={<SustainFeed />} />
         <Route path="/melody-motion" element={<DbNavigator />} />
         <Route path="/cyclist-digital-support" element={<CyclistSupport />} />
+
+        <Route path="/about" element={<About />} />
 
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>

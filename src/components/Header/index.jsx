@@ -17,11 +17,17 @@ export default function Hero({ subtitle = "UI/UX Designer" }) {
   return (
     <div className={`header ${scrolled ? "header--scrolled" : ""}`}>
       <div className="container">
-        <Link to="/">
-          <p className="header__title">
-            Surbhi Rajpal <span className="header__subtitle">- {subtitle}</span>
-          </p>
-        </Link>
+        <div className="header__content">
+          <Link to="/">
+            <p className="header__title">
+              Surbhi Rajpal{" "}
+              <span className="header__subtitle">- {subtitle}</span>
+            </p>
+          </Link>
+          <Link to="/about">
+            <p className="header__about">Know me more?</p>
+          </Link>
+        </div>
       </div>
     </div>
   );

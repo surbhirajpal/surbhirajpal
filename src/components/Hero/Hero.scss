@@ -26,6 +26,7 @@
 
     @include screen-xs {
       padding-top: 20px;
+      display: block;
     }
   }
 
@@ -46,6 +47,8 @@
     @include screen-xs {
       padding: 10px 15px;
       height: auto;
+      display: inline-block;
+      margin-bottom: 10px;
     }
 
     &:hover {

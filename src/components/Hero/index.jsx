@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="hero">
       <div className="hero__content">
-        <h1>{'I craft seamless digital experiences—fusing creativity, thoughtful UX, and purposeful design.'}</h1>
+        <h1>{'I craft seamless digital experiences - fusing creativity, thoughtful UX, and purposeful design.'}</h1>
 
         <div className='hero__action'>
             <a className='hero__button' href='mailto:surbhirajpal.jobs@gmail.com'>

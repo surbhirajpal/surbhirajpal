@@ -13,7 +13,7 @@ export function useScreenSize() {
 
   // Function to get screen size label
   const getScreenSize = (width) => {
-    if (width <= breakpoints.xxs) return "xxs";
+    // if (width <= breakpoints.xxs) return "xxs";
     if (width <= breakpoints.smMax) return "xs";
     // if (width >= breakpoints.smMin && width <= breakpoints.smMax) return "sm";
     if (width >= breakpoints.mdMin && width <= breakpoints.mdMax) return "md";

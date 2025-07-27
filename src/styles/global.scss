@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Placeholder:wght@400;500;600;700&display=swap");
+@import "./screen-defs.scss";
 
 $primary-color: #1890ff;
 
@@ -23,10 +24,19 @@ body {
   color: #111111;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-bottom: 0;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
+  cursor: pointer;
 }
 
 #root {
@@ -36,6 +46,10 @@ a {
 .container {
   width: 75%;
   margin: auto;
+
+  @include screen-xs {
+    width: 90%;
+  }
 }
 
 img {
@@ -45,11 +59,19 @@ img {
 .project {
   .ant-divider {
     margin: 80px 0;
+    @include screen-xs {
+      margin: 20px 0;
+    }
   }
 
   &__hero-title {
     text-align: center;
     margin-bottom: 56px;
+
+    @include screen-xs {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
   }
 
   &__hero-img {
@@ -63,6 +85,10 @@ img {
     font-size: 20px;
     margin-bottom: 0;
     text-transform: uppercase;
+
+    @include screen-xs {
+      font-size: 18px;
+    }
   }
 
   &__section-subtitle {
@@ -70,6 +96,11 @@ img {
     color: #111111;
     font-size: 48px;
     font-weight: bold;
+    margin-bottom: 16px;
+
+    @include screen-xs {
+      font-size: 18px;
+    }
   }
 
   &__section-description {
@@ -78,10 +109,18 @@ img {
     text-align: center;
     color: #111111;
     font-size: 18px;
-    margin-top: 16px;
+
+    @include screen-xs {
+      width: 100%;
+      font-size: 16px;
+    }
   }
 
-  li, .text {
+  li,
+  .text {
     font-size: 18px;
+    @include screen-xs {
+      font-size: 16px;
+    }
   }
 }

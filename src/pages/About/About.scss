@@ -14,7 +14,8 @@
     &__container{
         width: 1040px;
         margin: auto;
-        height: calc(100vh - 100px);
+        // height: calc(100vh - 100px);
+        height: 60vh;
         position: relative;
 
         @media(max-width: 1040px){

@@ -1,29 +1,72 @@
+@import "../../styles/screen-defs.scss";
+
 .sustainFeed {
   &__problem-content {
     background-color: #282828;
-    padding: 30px;
+    padding: 30px 20px;
     border-radius: 40px;
     color: #fff;
     height: 100%;
     text-align: center;
+
+    @include screen-xs {
+      font-size: 16px;
+    }
   }
 
-  &__research-content {
-    background-color: #d2d2d2;
-    padding: 30px 60px;
-    border-radius: 40px;
-    height: 100%;
+  &__problem {
+    .ant-col {
+      @include screen-xs {
+        margin-bottom: 20px;
+      }
+    }
   }
 
-  &__prototype-text {
-    margin-top: 30px;
-    text-align: center;
-    font-weight: 12px;
+  &__research {
+    .ant-col {
+      @include screen-xs {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-content {
+      background-color: #f9f9f9;
+      padding: 30px 60px;
+      border-radius: 40px;
+      height: 100%;
+
+      @include screen-xs {
+        padding: 30px 30px 30px 40px;
+      }
+    }
   }
 
-  &__result{
+  &__prototype {
+    .ant-col {
+      @include screen-xs {
+        margin-bottom: 40px;
+      }
+    }
+
     &-text {
-      background-color: #fff;
+      margin-top: 30px;
+      text-align: center;
+      font-weight: 12px;
+      @include screen-xs {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__result {
+    .ant-col {
+      @include screen-xs {
+        margin-bottom: 20px;
+      }
+    }
+
+    &-text {
+      background-color: #f9f9f9;
       padding: 30px;
       border-radius: 40px;
       // color: #fff;
@@ -31,9 +74,9 @@
       text-align: center;
 
       &.center {
-      display: flex;
-      align-items: center;
-    }
+        display: flex;
+        align-items: center;
+      }
     }
 
     .project__section-description {

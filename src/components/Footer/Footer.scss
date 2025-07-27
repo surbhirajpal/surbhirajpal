@@ -1,19 +1,45 @@
+@import "../../styles/screen-defs.scss";
+
 .footer {
   padding: 60px 0;
   box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
   margin-top: 80px;
 
+  @include screen-xs {
+    padding: 40px 0;
+    margin-top: 30px;
+  }
+
+  .projects__sustainFeed-wrapper {
+    margin-bottom: 0px;
+  }
+
+  .projects__sustainFeed-text {
+    color: #fff !important;
+  }
+
   .tilt-card {
     height: 200px;
 
-    .tilt-card-text{
-        font-size: 30px;
+    @include screen-xs {
+      height: 100px;
     }
 
-    .navigate{
-        font-size: 20px;
-        margin-bottom: 0;
-        color: #fff;
+    .tilt-card-text {
+      font-size: 30px;
+
+      @include screen-xs {
+        font-size: 16px;
+      }
+    }
+
+    .navigate {
+      font-size: 20px;
+      margin-bottom: 0;
+      color: #fff;
+      @include screen-xs {
+        font-size: 12px;
+      }
     }
 
     img {
@@ -25,30 +51,39 @@
     }
   }
 
-  .prev{
+  .prev {
     left: 20px !important;
     bottom: 20px !important;
     right: auto !important;
     top: auto !important;
   }
 
-  .next{
+  .next {
     right: 20px !important;
     bottom: 20px !important;
     left: auto !important;
     top: auto !important;
   }
 
-  .social-links{
+  .social-links {
     margin-top: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
 
-    img{
+    @include screen-xs {
+      margin-top: 30px;
+      gap: 20px;
+    }
+
+    img {
       width: auto;
       height: 40px;
+
+      @include screen-xs {
+        height: 20px;
+      }
     }
   }
 }

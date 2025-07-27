@@ -1,0 +1,38 @@
+// Define screen size variables
+$screen-xxs: 400px;
+$screen-xs: 767px;
+$screen-sm-min: 768px;
+$screen-sm-max: 991px;
+$screen-md-min: 992px;
+$screen-md-max: 1199px;
+
+// Media query mixins
+@mixin screen-xxs {
+  @media (max-width: #{$screen-xxs}) {
+    @content;
+  }
+}
+
+@mixin screen-xs {
+  @media (max-width: #{$screen-xs}) {
+    @content;
+  }
+}
+
+@mixin screen-xs-sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin screen-sm {
+  @media (min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+@mixin screen-md {
+  @media (min-width: #{$screen-md-min}) and (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}

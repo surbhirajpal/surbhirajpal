@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import { Divider, Row, Col } from "antd";
 
+import { useScreenSize } from "../../hooks/useScreenSize";
+
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 import "./EnhancingBonds.scss";
 
 export default function EnhancingBonds() {
+  const screenSize = useScreenSize();
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -55,7 +59,7 @@ export default function EnhancingBonds() {
             {"Discoveries in how children engage with technology."}
           </p>
           <Row gutter={60} align={"middle"} justify={"space-around"}>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <h2>{"Tangibility in Learning"}</h2>
               <p className="text">
                 {
@@ -71,7 +75,7 @@ export default function EnhancingBonds() {
               </p>
             </Col>
 
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <img src="/nui/chi.png" />
             </Col>
           </Row>
@@ -84,7 +88,7 @@ export default function EnhancingBonds() {
             {"Framing our questions to drive meaningful discovery."}
           </p>
           <Row gutter={60} align={"top"} justify={"space-around"}>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <div className="project__research">
                 <h2>{"Research Question"}</h2>
                 <p className="text">
@@ -94,7 +98,7 @@ export default function EnhancingBonds() {
                 </p>
               </div>
             </Col>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <div className="project__hypothesis">
                 <h2>{"Hypothesis"}</h2>
                 <p className="text">
@@ -129,7 +133,7 @@ export default function EnhancingBonds() {
           </p>
           <p className="project__section-subtitle">
             {
-              "Designing sessions to observe children’s remote engagement across senses."
+              "Designing sessions to observe children's remote engagement across senses."
             }
           </p>
 
@@ -187,7 +191,7 @@ export default function EnhancingBonds() {
             {"Early observations that shaped our research design."}
           </p>
           <Row gutter={60} align={"top"} justify={"space-around"}>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <h2>{"Positive findings:"}</h2>
               <ul>
                 <li>
@@ -203,7 +207,7 @@ export default function EnhancingBonds() {
                 </li>
               </ul>
             </Col>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <h2>{"Negative findings:"}</h2>
               <ul>
                 <li>
@@ -287,10 +291,10 @@ export default function EnhancingBonds() {
             {"Validating our research through hands-on session"}
           </p>
           <Row gutter={60} align={"middle"} justify={"space-around"}>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <img src="/nui/test-result.png" />
             </Col>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <h2>{"Heart Rate Monitoring Adjustments:"}</h2>
               <ul>
                 <li>

@@ -1,32 +1,53 @@
-.siemens{
-    &__problem{
-        &-card{
-            background-color: black;
-            padding: 30px 20px;
-            font-size: 18px;
-            color: #ffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            height: 100%;
-            border-radius: 40px;
-            text-align: center;
+@import "../../styles/screen-defs.scss";
 
-            img{
-                width: 100px;
-                height: fit-content;
-            }
+.siemens {
+  &__problem {
+    .ant-col {
+      @include screen-xs {
+        margin-bottom: 20px;
+      }
+    }
+    &-card {
+      background-color: black;
+      padding: 30px 20px;
+      font-size: 18px;
+      color: #ffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      height: 100%;
+      border-radius: 40px;
+      text-align: center;
 
-            p{
-                margin-bottom: 0px;
-            }
+      @include screen-xs {
+        padding: 20px 10px;
+        font-size: 16px;
+      }
+
+      img {
+        width: 100px;
+        height: fit-content;
+        @include screen-xs {
+          width: 60px;
         }
+      }
+
+      p {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &__solution {
+    ul {
+      @include screen-xs {
+        padding-left: 20px;
+      }
     }
 
-    &__solution{
-        li{
-            margin-bottom: 24px;
-        }
+    li {
+      margin-bottom: 24px;
     }
+  }
 }

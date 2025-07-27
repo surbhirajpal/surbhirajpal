@@ -1,3 +1,5 @@
+@import "../../styles/screen-defs.scss";
+
 .header {
   padding: 40px 0;
   position: sticky;
@@ -5,6 +7,10 @@
   z-index: 1000;
   background-color: #fff;
   transition: box-shadow 1s ease;
+
+  @include screen-xs {
+    padding: 20px 0;
+  }
 
   &--scrolled {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -20,11 +26,19 @@
     color: #111111;
     font-weight: 500;
     margin-bottom: 0px;
+
+    @include screen-xs {
+      font-size: 16px;
+    }
   }
 
   &__subtitle {
     font-size: 22px;
     color: #666666;
+
+     @include screen-xs {
+      font-size: 16px;
+    }
   }
 
   &__about {

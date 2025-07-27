@@ -1,4 +1,6 @@
 import { Divider, Row, Col } from "antd";
+import { useScreenSize } from "../../hooks/useScreenSize";
+
 import {
   DbProject,
   LittleLinks,
@@ -9,60 +11,62 @@ import {
 import "./Footer.scss";
 
 export default function Footer({ project }) {
+  const screenSize = useScreenSize();
+
   return (
     <div className="footer">
       <div className="container">
         {project === "db" ? (
-          <Row align={"middle"} gutter={60}>
+          <Row align={"middle"} gutter={screenSize === "xs" ? 10 : 60}>
             <Col span={12}>
-              <PedalPal prev={true} />
+              <PedalPal prev={true} inFooter={true} />
             </Col>
             <Col span={12}>
-              <LittleLinks next={true} />
+              <LittleLinks next={true} inFooter={true} />
             </Col>
           </Row>
         ) : null}
 
         {project === "littleLinks" ? (
-          <Row align={"middle"} gutter={60}>
+          <Row align={"middle"} gutter={screenSize === "xs" ? 10 : 60}>
             <Col span={12}>
-              <DbProject prev={true} />
+              <DbProject prev={true} inFooter={true} />
             </Col>
             <Col span={12}>
-              <Siemens next={true} />
+              <Siemens next={true} inFooter={true} />
             </Col>
           </Row>
         ) : null}
 
         {project === "siemens" ? (
-          <Row align={"middle"} gutter={60}>
+          <Row align={"middle"} gutter={screenSize === "xs" ? 10 : 60}>
             <Col span={12}>
-              <LittleLinks prev={true} />
+              <LittleLinks prev={true} inFooter={true} />
             </Col>
             <Col span={12}>
-              <SustainFeed next={true} />
+              <SustainFeed next={true} inFooter={true} />
             </Col>
           </Row>
         ) : null}
 
         {project === "sustainFeed" ? (
-          <Row align={"middle"} gutter={60}>
+          <Row align={"middle"} gutter={screenSize === "xs" ? 10 : 60}>
             <Col span={12}>
-              <Siemens prev={true} />
+              <Siemens prev={true} inFooter={true} />
             </Col>
             <Col span={12}>
-              <PedalPal next={true} />
+              <PedalPal next={true} inFooter={true} />
             </Col>
           </Row>
         ) : null}
 
         {project === "pedalPal" ? (
-          <Row align={"middle"} gutter={60}>
+          <Row align={"middle"} gutter={screenSize === "xs" ? 10 : 60}>
             <Col span={12}>
-              <SustainFeed prev={true} />
+              <SustainFeed prev={true} inFooter={true} />
             </Col>
             <Col span={12}>
-              <DbProject next={true} />
+              <DbProject next={true} inFooter={true} />
             </Col>
           </Row>
         ) : null}

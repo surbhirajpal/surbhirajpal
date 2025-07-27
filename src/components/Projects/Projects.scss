@@ -1,8 +1,14 @@
+@import "../../styles/screen-defs.scss";
+
 .projects {
   padding-bottom: 80px;
   display: flex;
   gap: 30px;
   flex-direction: column;
+
+  @include screen-xs {
+    gap: 0;
+  }
 
   // &__row2 {
   //   margin-top: 30px;
@@ -14,31 +20,63 @@
     height: 750px;
     // height: 60%;
     object-fit: cover;
-  }
 
-  &__db{
-    &-text{
-      bottom: 40px;
-      left: 40px;
+    @include screen-xs {
+      height: 300px;
+      margin-bottom: 20px;
     }
   }
 
-  &__nui{
-    &-text{
+  &__db {
+    &-text {
+      bottom: 40px;
+      left: 40px;
+
+      @include screen-xs {
+        bottom: 40px;
+        left: 20px;
+      }
+    }
+  }
+
+  &__nui {
+    &-text {
       bottom: 40px;
       right: 40px;
+
+      @include screen-xs {
+        bottom: 40px;
+        left: 20px;
+        right: auto;
+      }
     }
   }
 
-  &__siemens{
-    &-text{
+  &__siemens {
+    @include screen-xs {
+      height: 300px;
+      margin-bottom: 20px;
+      width: auto;
+    }
+
+    &-text {
       top: 40px;
       left: 40px;
+
+      @include screen-xs {
+        bottom: 40px;
+        left: 20px;
+        top: auto;
+      }
     }
   }
 
   &__sustainFeed-wrapper {
     margin-bottom: 30px;
+
+    @include screen-xs {
+      margin-bottom: 0px;
+    }
   }
 
   &__sustainFeed {
@@ -46,10 +84,21 @@
     height: 695px;
     object-fit: cover;
 
-    &-text{
+    @include screen-xs {
+      height: 300px;
+      margin-bottom: 20px;
+    }
+
+    &-text {
       top: 40px;
       left: 40px;
       color: #111 !important;
+
+      @include screen-xs {
+        bottom: 40px;
+        left: 20px;
+        top: auto;
+      }
     }
   }
 
@@ -57,9 +106,21 @@
     width: 100%;
     height: 550px;
     object-fit: cover;
-    &-text{
+
+    @include screen-xs {
+      height: 300px;
+      margin-bottom: 20px;
+    }
+
+    &-text {
       top: 40px;
       left: 40px;
+
+      @include screen-xs {
+        bottom: 40px;
+        left: 20px;
+        top: auto;
+      }
     }
   }
 
@@ -69,13 +130,25 @@
     // height: 60%;
     object-fit: cover;
 
-    &-text{
+    @include screen-xs {
+      height: 300px;
+      margin-bottom: 20px;
+    }
+
+    &-text {
       top: 40px;
       right: 40px;
+
+      @include screen-xs {
+        bottom: 40px;
+        left: 20px;
+        right: auto;
+        top: auto;
+      }
     }
   }
 
-  .coming-soon{
+  .coming-soon {
     position: absolute;
     bottom: 10%;
     width: 100%;
@@ -84,11 +157,17 @@
     color: #fff;
     font-size: 18px;
     padding: 10px 0;
+
+    @include screen-xs {
+      bottom: auto;
+      top: 20%;
+    }
   }
 
-  .navigate{
+  .navigate {
     font-size: 18px;
     font-weight: bold;
     color: #fff;
+    margin-bottom: 0;
   }
 }

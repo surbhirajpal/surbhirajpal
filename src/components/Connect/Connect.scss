@@ -1,4 +1,6 @@
-.connect {  
+@import "../../styles/screen-defs.scss";
+
+.connect {
   &__link {
     display: flex;
     color: #111111;
@@ -24,5 +26,8 @@
 
   .ant-divider {
     margin: 24px 0 !important;
+    @include screen-xs {
+      margin: 20px 0 !important;
+    }
   }
 }

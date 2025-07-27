@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import './TiltCard.scss';
+import "./TiltCard.scss";
 
-export const TiltCard = ({ children, width = 300, height = 400 }) => {
+export const TiltCard = ({ children, width = 300, height = 400, inFooter }) => {
   const cardRef = useRef(null);
 
   // Motion values
@@ -10,8 +10,12 @@ export const TiltCard = ({ children, width = 300, height = 400 }) => {
   const y = useMotionValue(0);
 
   // Smoothed motion
-  const rotateX = useSpring(useTransform(y, [-1, 1], [10, -10]), { stiffness: 200 });
-  const rotateY = useSpring(useTransform(x, [-1, 1], [-10, 10]), { stiffness: 200 });
+  const rotateX = useSpring(useTransform(y, [-1, 1], [10, -10]), {
+    stiffness: 200,
+  });
+  const rotateY = useSpring(useTransform(x, [-1, 1], [-10, 10]), {
+    stiffness: 200,
+  });
 
   // Handle mouse movement inside card
   const handleMouseMove = (e) => {
@@ -45,7 +49,7 @@ export const TiltCard = ({ children, width = 300, height = 400 }) => {
         cursor: "pointer",
         perspective: 1000,
         background: "#fff",
-        position: 'relative',
+        position: "relative",
       }}
     >
       <motion.div
@@ -61,6 +65,7 @@ export const TiltCard = ({ children, width = 300, height = 400 }) => {
         }}
       >
         {children}
+        {inFooter ? <div className="overlay" /> : null}
       </motion.div>
     </motion.div>
   );

@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Divider, Row, Col, Carousel } from "antd";
 
+import { useScreenSize } from "../../hooks/useScreenSize";
+
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
@@ -9,6 +11,9 @@ import Screen from "./Screen";
 import "./CyclistSupport.scss";
 
 export default function CyclistSupport() {
+  const screenSize = useScreenSize();
+  console.log('screensize', screenSize)
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -72,7 +77,7 @@ export default function CyclistSupport() {
             Some stats to have a closer look.
           </p>
           <Row align={"middle"} justify={"space-between"}>
-            <Col span={4}>
+            <Col span={screenSize === "xs" ? 24 : 4}>
               <div className="cycle__research-card">
                 <p className="cycle-stats">932</p>
                 <p>
@@ -82,7 +87,7 @@ export default function CyclistSupport() {
               </div>
             </Col>
 
-            <Col span={4}>
+            <Col span={screenSize === "xs" ? 24 : 4}>
               <div className="cycle__research-card">
                 <p className="cycle-stats">20%</p>
                 <p>
@@ -93,7 +98,7 @@ export default function CyclistSupport() {
               </div>
             </Col>
 
-            <Col span={4}>
+            <Col span={screenSize === "xs" ? 24 : 4}>
               <div className="cycle__research-card">
                 <p className="cycle-stats">50%</p>
                 <p>
@@ -103,7 +108,7 @@ export default function CyclistSupport() {
               </div>
             </Col>
 
-            <Col span={4}>
+            <Col span={screenSize === "xs" ? 24 : 4}>
               <div className="cycle__research-card">
                 <p className="cycle-stats">55%</p>
                 <p>
@@ -113,7 +118,7 @@ export default function CyclistSupport() {
               </div>
             </Col>
 
-            <Col span={4}>
+            <Col span={screenSize === "xs" ? 24 : 4}>
               <div className="cycle__research-card">
                 <p className="cycle-stats">78%</p>
                 <p>
@@ -133,10 +138,10 @@ export default function CyclistSupport() {
             Balancing real needs with real-world roadblocks.
           </p>
           <Row gutter={60} align={"middle"} justify={"space-around"}>
-            <Col span={12}>
+            <Col span={screenSize === "xs" ? 24 : 12}>
               <img src="/cyclist/insights.png" />
             </Col>
-            <Col span={12}>
+            <Col span={screenSize === "xs" ? 24 : 12}>
               <ul>
                 <li>
                   <strong>Seamless Integration:</strong> Cyclists need hazard
@@ -201,7 +206,9 @@ export default function CyclistSupport() {
           <p className="project__section-subtitle">
             {"Polished designs bringing validated concepts to life."}
           </p>
-          <Screen />
+          {
+            screenSize === "xs" ? null : <Screen />
+          }
         </div>
         <Divider />
 

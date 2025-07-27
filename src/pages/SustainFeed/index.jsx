@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import { Divider, Row, Col } from "antd";
 
+import { useScreenSize } from "../../hooks/useScreenSize";
+
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 import "./SustainFeed.scss";
 
 export default function SustainFeed() {
+  const screenSize = useScreenSize();
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -44,7 +48,7 @@ export default function SustainFeed() {
             {"Highlighting barriers to efficient meal redistribution."}
           </p>
           <Row gutter={60} align={"stretch"} justify={"space-around"}>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <div className="sustainFeed__problem-content">
                 <h2>{"Hungry students:"}</h2>
                 <p className="text">
@@ -55,7 +59,7 @@ export default function SustainFeed() {
                 </p>
               </div>
             </Col>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <div className="sustainFeed__problem-content">
                 <h2>{"Fragmented donations:"}</h2>
                 <p className="text">
@@ -67,7 +71,7 @@ export default function SustainFeed() {
                 </p>
               </div>
             </Col>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <div className="sustainFeed__problem-content">
                 <h2>{"Safety concerns"}</h2>
                 <p className="text">
@@ -91,7 +95,7 @@ export default function SustainFeed() {
             {"From user empathy to impactful solutions."}
           </p>
           <Row gutter={60} align={"middle"} justify={"space-around"}>
-            <Col span={10}>
+            <Col span={screenSize === "xs" ? 24 : 10}>
               <p className="text">
                 In our Design Thinking process for Sustain Feed, we began by{" "}
                 <strong>empathizing</strong> with stakeholders—conducting
@@ -115,7 +119,7 @@ export default function SustainFeed() {
                 and prioritize our next steps.
               </p>
             </Col>
-            <Col span={10}>
+            <Col span={screenSize === "xs" ? 24 : 10}>
               <img src="/sustainFeed/design-process.png" />
             </Col>
           </Row>
@@ -130,7 +134,7 @@ export default function SustainFeed() {
             }
           </p>
           <Row gutter={0} align={"stretch"} justify={"space-around"}>
-            <Col span={10}>
+            <Col span={screenSize === "xs" ? 24 : 10}>
               <div className="sustainFeed__research-content">
                 <ul>
                   <li className="text">
@@ -158,7 +162,7 @@ export default function SustainFeed() {
               </div>
             </Col>
 
-            <Col span={10}>
+            <Col span={screenSize === "xs" ? 24 : 10}>
               <div className="sustainFeed__research-content">
                 <ul>
                   <li className="text">
@@ -195,14 +199,14 @@ export default function SustainFeed() {
             {"Visualizing key flows through high-fidelity mockups."}
           </p>
           <Row gutter={0} align={"top"} justify={"space-around"}>
-            <Col span={4}>
+            <Col span={screenSize === "xs" ? 24 : 4}>
               <img src="/sustainFeed/screen-1.png" />
               <p className="sustainFeed__prototype-text">
                 Our food donation app seamlessly connects donors with those in
                 need, providing a user-friendly platform to share surplus food.
               </p>
             </Col>
-            <Col span={4}>
+            <Col span={screenSize === "xs" ? 24 : 4}>
               <img src="/sustainFeed/screen-2.png" />
               <p className="sustainFeed__prototype-text">
                 Empower generosity in seconds! Our intuitive donation screen
@@ -210,7 +214,7 @@ export default function SustainFeed() {
                 to donate.
               </p>
             </Col>
-            <Col span={4}>
+            <Col span={screenSize === "xs" ? 24 : 4}>
               <img src="/sustainFeed/screen-3.png" />
               <p className="sustainFeed__prototype-text">
                 Review your impact at a glance! Our Donation Overview screen
@@ -218,7 +222,7 @@ export default function SustainFeed() {
                 contribute with all the details.
               </p>
             </Col>
-            <Col span={4}>
+            <Col span={screenSize === "xs" ? 24 : 4}>
               <img src="/sustainFeed/screen-4.png" />
               <p className="sustainFeed__prototype-text">
                 Review your total donations and their social impact, then
@@ -226,7 +230,7 @@ export default function SustainFeed() {
                 financial benefits.
               </p>
             </Col>
-            <Col span={4}>
+            <Col span={screenSize === "xs" ? 24 : 4}>
               <img src="/sustainFeed/screen-4.png" />
               <p className="sustainFeed__prototype-text">
                 Students can reserve donated meals for the next day and pick
@@ -250,7 +254,7 @@ export default function SustainFeed() {
           </p>
 
           <Row gutter={60} align={"stretch"} justify={"space-around"}>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <div className="sustainFeed__result-text">
                 <img src="/sustainFeed/result-1.png" />
                 <p className="text">
@@ -259,7 +263,7 @@ export default function SustainFeed() {
                 </p>
               </div>
             </Col>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <div className="sustainFeed__result-text center">
                 <p className="text">
                   The motivation to make donations through{" "}
@@ -273,7 +277,7 @@ export default function SustainFeed() {
                 </p>
               </div>
             </Col>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <div className="sustainFeed__result-text">
                 <img src="/sustainFeed/result-2.png" />
                 <p className="text">

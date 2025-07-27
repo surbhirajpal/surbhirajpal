@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import { Divider, Row, Col, Carousel } from "antd";
 
+import { useScreenSize } from "../../hooks/useScreenSize";
+
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 import "./Siemens.scss";
 
 export default function Siemens() {
+  const screenSize = useScreenSize();
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -43,7 +47,7 @@ export default function Siemens() {
             {"Issues faced by Point-of-care managers"}
           </p>
           <Row gutter={60} align={"stretch"} justify={"space-between"}>
-            <Col span={6}>
+            <Col span={screenSize === "xs" ? 24 : 6}>
               <div className="siemens__problem-card">
                 <img src="/siemens/technology.png" />
                 <p>
@@ -52,7 +56,7 @@ export default function Siemens() {
                 </p>
               </div>
             </Col>
-            <Col span={6}>
+            <Col span={screenSize === "xs" ? 24 : 6}>
               <div className="siemens__problem-card">
                 <img src="/siemens/info.png" />
                 <p>
@@ -61,7 +65,7 @@ export default function Siemens() {
                 </p>
               </div>
             </Col>
-            <Col span={6}>
+            <Col span={screenSize === "xs" ? 24 : 6}>
               <div className="siemens__problem-card">
                 <img src="/siemens/training.png" />
                 <p>
@@ -71,7 +75,7 @@ export default function Siemens() {
                 </p>
               </div>
             </Col>
-            <Col span={6}>
+            <Col span={screenSize === "xs" ? 24 : 6}>
               <div className="siemens__problem-card">
                 <img src="/siemens/service.png" />
                 <p>
@@ -93,10 +97,10 @@ export default function Siemens() {
           </p>
 
           <Row gutter={60} align={"middle"} justify={"space-around"}>
-            <Col span={12}>
+            <Col span={screenSize === "xs" ? 24 : 12}>
               <img src="/siemens/dashboard.webp" />
             </Col>
-            <Col span={12}>
+            <Col span={screenSize === "xs" ? 24 : 12}>
               <ul>
                 <li>
                   <strong>Status Dashboard:</strong> Live QC metrics and device

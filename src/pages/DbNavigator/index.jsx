@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import { Divider, Row, Col } from "antd";
 
+import { useScreenSize } from "../../hooks/useScreenSize";
+
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 import "./DbNavigator.scss";
 
 export default function DbNavigator() {
+  const screenSize = useScreenSize();
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -72,7 +76,7 @@ export default function DbNavigator() {
             {"Turning pain points into polished experiences."}
           </p>
           <Row gutter={60} align={"top"} justify={"space-around"}>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <h2>{"Challenges"}</h2>
               <ul>
                 <li>
@@ -94,7 +98,7 @@ export default function DbNavigator() {
                 </li>
               </ul>
             </Col>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <h2>{"Proposed Design Solutions"}</h2>
               <ul>
                 <li>
@@ -142,10 +146,10 @@ export default function DbNavigator() {
             {"Consistent components, cohesive experience."}
           </p>
           <Row gutter={60} align={"center"} justify={"space-around"}>
-            <Col span={10}>
+            <Col span={screenSize === "xs" ? 24 : 10}>
               <img src="/db/color-typo.png" />
             </Col>
-            <Col span={14}>
+            <Col span={screenSize === "xs" ? 24 : 14}>
               <img src="/db/icons.png" />
             </Col>
           </Row>
@@ -159,7 +163,7 @@ export default function DbNavigator() {
           <p className="project__section-subtitle">
             {"Sketching user flows before pixels take shape."}
           </p>
-          <Row gutter={30}>
+          <Row gutter={screenSize === "xs" ? 10 : 30}>
             <Col span={8}>
               <p>{""}</p>
               <img src="/db/low-fed-1.png" />
@@ -184,7 +188,7 @@ export default function DbNavigator() {
             {"Early feedback to refine the experience."}
           </p>
           <Row gutter={60} align={"top"} justify={"space-around"}>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <h2>{"UT1 Findings"}</h2>
               <ul>
                 <li>{"Login compulsion to complete payment process."}</li>
@@ -196,7 +200,7 @@ export default function DbNavigator() {
                 <li>{"Endless scrolling for seat selection."}</li>
               </ul>
             </Col>
-            <Col span={8}>
+            <Col span={screenSize === "xs" ? 24 : 8}>
               <h2>{"Ideation to Improve Interface"}</h2>
               <ul>
                 <li>{"Login to be made optional"}</li>
@@ -240,7 +244,7 @@ export default function DbNavigator() {
           }
         </p>
       </div>
-      <Footer project="db"/>
+      <Footer project="db" />
     </motion.div>
   );
 }

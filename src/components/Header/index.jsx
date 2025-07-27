@@ -25,7 +25,7 @@ export default function Hero({ subtitle = "UI/UX Designer" }) {
             </p>
           </Link>
           {/* <Link to="/about">
-            <p className="header__about">Know me more?</p>
+            <p className="header__about">{`About Yours Truly :)`}</p>
           </Link> */}
         </div>
       </div>

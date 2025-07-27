@@ -1,9 +1,20 @@
+@import "../../styles/screen-defs.scss";
+
 .hero {
   &__content {
     padding: 64px 0 80px;
 
+    @include screen-xs {
+      padding: 20px 0 30px;
+    }
+
     h1 {
       color: #111111;
+      margin: 0;
+
+      @include screen-xs {
+        font-size: 20px;
+      }
     }
   }
 
@@ -12,6 +23,10 @@
     display: flex;
     gap: 24px;
     align-items: center;
+
+    @include screen-xs {
+      padding-top: 20px;
+    }
   }
 
   &__button {
@@ -28,7 +43,12 @@
     font-weight: 700;
     transition: font-size 300ms;
 
-    &:hover{
+    @include screen-xs {
+      padding: 10px 15px;
+      height: auto;
+    }
+
+    &:hover {
       color: #111;
       font-size: 18px;
     }
@@ -50,8 +70,12 @@
     width: 10px;
   }
 
-  &__open-text{
+  &__open-text {
     color: #088046;
     font-size: 16px;
+
+    @include screen-xs {
+      font-size: 14px;
+    }
   }
 }

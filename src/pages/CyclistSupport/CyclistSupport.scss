@@ -18,6 +18,7 @@
       border-radius: 40px;
       background-color: #d1e8fb;
       font-size: 18px;
+      height: 100%;
 
       @include screen-xs {
         padding: 30px;
@@ -55,15 +56,15 @@
     }
   }
 
-  .slick-dots li button {
-    background: rgb(195, 195, 195) !important; /* default dot color */
-    opacity: 1;
-  }
+  // .slick-dots li button {
+  //   background: rgb(195, 195, 195) !important; /* default dot color */
+  //   opacity: 1;
+  // }
 
-  .slick-dots li.slick-active button {
-    background: black !important; /* active dot color */
-    opacity: 1;
-  }
+  // .slick-dots li.slick-active button {
+  //   background: black !important; /* active dot color */
+  //   opacity: 1;
+  // }
 
   &__high-fed {
     margin: 0;

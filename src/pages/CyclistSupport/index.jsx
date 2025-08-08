@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Divider, Row, Col, Carousel } from "antd";
+import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 
 import { useScreenSize } from "../../hooks/useScreenSize";
 
@@ -12,7 +13,7 @@ import "./CyclistSupport.scss";
 
 export default function CyclistSupport() {
   const screenSize = useScreenSize();
-  console.log('screensize', screenSize)
+  console.log("screensize", screenSize);
 
   return (
     <motion.div
@@ -76,7 +77,7 @@ export default function CyclistSupport() {
           <p className="project__section-subtitle">
             Some stats to have a closer look.
           </p>
-          <Row align={"middle"} justify={"space-between"}>
+          <Row align={"stretch"} justify={"space-between"}>
             <Col span={screenSize === "xs" ? 24 : 4}>
               <div className="cycle__research-card">
                 <p className="cycle-stats">932</p>
@@ -175,7 +176,7 @@ export default function CyclistSupport() {
           <p className="project__section-subtitle">
             Profiling cyclists to tailor a safer riding experience.
           </p>
-          <Carousel autoplay={true} className="custom-carousel">
+          <Carousel autoplay arrows={true} className="custom-carousel">
             <div>
               <img src="/cyclist/persona-1.png" />
             </div>
@@ -206,9 +207,7 @@ export default function CyclistSupport() {
           <p className="project__section-subtitle">
             {"Polished designs bringing validated concepts to life."}
           </p>
-          {
-            screenSize === "xs" ? null : <Screen />
-          }
+          {screenSize === "xs" ? null : <Screen />}
         </div>
         <Divider />
 
@@ -216,7 +215,7 @@ export default function CyclistSupport() {
         <Divider />
 
         <div className="cycle__persona">
-          <Carousel autoplay={true} className="custom-carousel">
+          <Carousel arrows={true} autoplay={true} className="custom-carousel">
             <div>
               <img src="/cyclist/scenario1.png" />
             </div>
@@ -251,9 +250,9 @@ export default function CyclistSupport() {
         </div>
         <Divider />
 
-        <p className="project__section-description">
+        <p className="center">
           {
-            "Note: Only key screens are displayed here to safeguard the full design. Reach out for an in-depth preview."
+            "Note: Only the highlight screens are shown here. Slide into my inbox for the full tour."
           }
         </p>
       </div>

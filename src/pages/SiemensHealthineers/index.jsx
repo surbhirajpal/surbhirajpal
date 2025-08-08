@@ -125,7 +125,7 @@ export default function Siemens() {
         <Divider />
 
         <div className="siemens__images">
-          <Carousel autoplay={true} className="custom-carousel">
+          <Carousel arrows={true} autoplay={true} className="custom-carousel">
             <div>
               <img src="/siemens/siemens-1.webp" />
             </div>

@@ -89,10 +89,6 @@ const StickyScrollImage = () => {
 
         <motion.div style={{ opacity: text2opacity }}>
           <p>
-            Offers real-time stats on rides, miles, calories, and encountered
-            dangers for informed cycling.
-          </p>
-          <p>
             Tracks consecutive rule-compliant cycling sessions to encourage safe
             and responsible riding habits.
           </p>

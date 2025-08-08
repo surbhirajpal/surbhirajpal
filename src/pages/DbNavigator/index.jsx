@@ -240,7 +240,7 @@ export default function DbNavigator() {
 
         <p className="project__section-description">
           {
-            "Note: Only key screens are displayed here to safeguard the full design. Reach out for an in-depth preview."
+            "Note: Only the highlight screens are shown here. Slide into my inbox for the full tour."
           }
         </p>
       </div>

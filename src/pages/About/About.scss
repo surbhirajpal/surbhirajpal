@@ -72,3 +72,14 @@
         background-position: 180%;
     }
 }
+
+.aboutMe{
+    &__content{
+        margin: 60px 0;
+    }
+
+    &__vgi{
+        width: 70%;
+        margin: auto;
+    }
+}

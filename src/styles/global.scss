@@ -125,15 +125,21 @@ img {
   }
 }
 
-.center{
+.center {
   text-align: center;
 }
 
 .ant-carousel .slick-prev {
   inset-inline-start: -40px;
+  @include screen-xs {
+    inset-inline-start: -15px;
+  }
 }
 .ant-carousel .slick-next {
   inset-inline-end: -40px;
+  @include screen-xs {
+    inset-inline-end: -15px;
+  }
 }
 .ant-carousel .slick-dots-bottom {
   bottom: -20px;
@@ -144,6 +150,11 @@ img {
   color: #111111;
   width: 23px;
   height: 23px;
+
+  @include screen-xs {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .ant-carousel .slick-list {
@@ -156,6 +167,11 @@ img {
   height: 16px;
   border-inline-start-width: 3px;
   border-block-start-width: 3px;
+
+  @include screen-xs {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .ant-carousel .slick-dots li::after {

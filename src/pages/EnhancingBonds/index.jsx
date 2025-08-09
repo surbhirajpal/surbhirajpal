@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Divider, Row, Col } from "antd";
+import { Divider, Row, Col, Carousel } from "antd";
 
 import { useScreenSize } from "../../hooks/useScreenSize";
 
@@ -118,12 +118,14 @@ export default function EnhancingBonds() {
             {"Defining our users to guide empathetic design."}
           </p>
 
-          <div className="nui__persona-1">
+          <Carousel autoplay arrows={true} className="custom-carousel">
+            <div>
             <img src="/nui/persona-1.png" />
-          </div>
-          <div className="nui__persona-2">
+            </div>
+            <div>
             <img src="/nui/persona-2.png" />
-          </div>
+            </div>
+          </Carousel>
         </div>
         <Divider />
 

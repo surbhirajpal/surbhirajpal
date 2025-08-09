@@ -24,9 +24,9 @@ export default function Hero({ subtitle = "UI/UX Designer" }) {
               <span className="header__subtitle">- {subtitle}</span>
             </p>
           </Link>
-          {/* <Link to="/about">
+          <Link to="/about">
             <p className="header__about">{`About Yours Truly :)`}</p>
-          </Link> */}
+          </Link>
         </div>
       </div>
     </div>

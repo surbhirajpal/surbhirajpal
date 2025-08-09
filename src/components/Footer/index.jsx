@@ -17,7 +17,7 @@ export default function Footer({ project }) {
     <div className="footer">
       <div className="container">
         {project === "db" ? (
-          <Row align={"middle"} gutter={screenSize === "xs" ? 10 : 60}>
+          <Row align={"middle"} gutter={screenSize === "xs" ? 10 : 60} className="footer__projects">
             <Col span={12}>
               <PedalPal prev={true} inFooter={true} />
             </Col>
@@ -28,7 +28,7 @@ export default function Footer({ project }) {
         ) : null}
 
         {project === "littleLinks" ? (
-          <Row align={"middle"} gutter={screenSize === "xs" ? 10 : 60}>
+          <Row align={"middle"} gutter={screenSize === "xs" ? 10 : 60} className="footer__projects">
             <Col span={12}>
               <DbProject prev={true} inFooter={true} />
             </Col>
@@ -39,7 +39,7 @@ export default function Footer({ project }) {
         ) : null}
 
         {project === "siemens" ? (
-          <Row align={"middle"} gutter={screenSize === "xs" ? 10 : 60}>
+          <Row align={"middle"} gutter={screenSize === "xs" ? 10 : 60} className="footer__projects">
             <Col span={12}>
               <LittleLinks prev={true} inFooter={true} />
             </Col>
@@ -50,7 +50,7 @@ export default function Footer({ project }) {
         ) : null}
 
         {project === "sustainFeed" ? (
-          <Row align={"middle"} gutter={screenSize === "xs" ? 10 : 60}>
+          <Row align={"middle"} gutter={screenSize === "xs" ? 10 : 60} className="footer__projects">
             <Col span={12}>
               <Siemens prev={true} inFooter={true} />
             </Col>
@@ -61,7 +61,7 @@ export default function Footer({ project }) {
         ) : null}
 
         {project === "pedalPal" ? (
-          <Row align={"middle"} gutter={screenSize === "xs" ? 10 : 60}>
+          <Row align={"middle"} gutter={screenSize === "xs" ? 10 : 60} className="footer__projects">
             <Col span={12}>
               <SustainFeed prev={true} inFooter={true} />
             </Col>

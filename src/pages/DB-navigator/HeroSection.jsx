@@ -43,7 +43,7 @@ export default function HeroSection() {
                                             <UserOutlined />
                                             <span>Role</span>
                                         </div>
-                                        <p>Lead Product Designer</p>
+                                        <p>UI/UX Researcher and Designer</p>
                                     </div>
                                 </Col>
                                 <Col xs={12} sm={12}>
@@ -61,7 +61,7 @@ export default function HeroSection() {
                                             <ToolOutlined />
                                             <span>Tools</span>
                                         </div>
-                                        <p>Figma, Protopie, Principle</p>
+                                        <p>Miro, Sketch, Figma, Adobe Illustrator, Adobe After Effects</p>
                                     </div>
                                 </Col>
                                 <Col xs={12} sm={12}>

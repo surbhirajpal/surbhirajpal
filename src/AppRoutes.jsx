@@ -3,6 +3,8 @@ import { useEffect } from "react";
 
 import Home from "./pages/Home";
 import DbNavigator from "./pages/DbNavigator";
+import DB_Navigator from "./pages/DB-navigator";
+
 import EnhancingBonds from "./pages/EnhancingBonds";
 import SiemensHealthineers from "./pages/SiemensHealthineers";
 import SustainFeed from "./pages/SustainFeed";
@@ -27,7 +29,7 @@ export default function App() {
       <Routes>
         {/* Primary pages */}
         <Route path="/" element={<Home />} />
-        <Route path="/db-navigator" element={<DbNavigator />} />
+        <Route path="/db-navigator" element={<DB_Navigator />} />
         <Route path="/enhancing-bonds-remotely" element={<EnhancingBonds />} />
         <Route path="/siemens-healthineers" element={<SiemensHealthineers />} />
         <Route path="/sustain-feed" element={<SustainFeed />} />

@@ -3,13 +3,15 @@ import { useEffect } from "react";
 
 import Home from "./pages/Home";
 import DbNavigator from "./pages/DbNavigator";
-import DB_Navigator from "./pages/DB-navigator";
-
 import EnhancingBonds from "./pages/EnhancingBonds";
 import SiemensHealthineers from "./pages/SiemensHealthineers";
 import SustainFeed from "./pages/SustainFeed";
 import CyclistSupport from "./pages/CyclistSupport";
 import About from "./pages/About";
+
+import DB_Navigator from "./pages/DB-navigator";
+import Enhancing_Bonds_Remotely from "./pages/enhancing-bonds-remotely";
+
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -30,7 +32,7 @@ export default function App() {
         {/* Primary pages */}
         <Route path="/" element={<Home />} />
         <Route path="/db-navigator" element={<DB_Navigator />} />
-        <Route path="/enhancing-bonds-remotely" element={<EnhancingBonds />} />
+        <Route path="/enhancing-bonds-remotely" element={<Enhancing_Bonds_Remotely />} />
         <Route path="/siemens-healthineers" element={<SiemensHealthineers />} />
         <Route path="/sustain-feed" element={<SustainFeed />} />
         <Route path="/melody-motion" element={<DbNavigator />} />

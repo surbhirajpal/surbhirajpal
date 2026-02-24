@@ -1,0 +1,792 @@
+﻿@import '../../styles/screen-defs.scss';
+
+// ── Design Tokens ──────────────────────────────────────────────────────────────
+$accent:       #ff6900;
+$accent-alt:   #ff8904;
+$page-bg:      #f8fafc;
+$surface:      #ffffff;
+$surface-soft: #f1f5f9;
+$border:       #e2e8f0;
+$border-alt:   #cbd5e1;
+$text-heading: #0f172b;
+$text-body:    #475569;
+$text-muted:   #94a3b8;
+$text-label:   #64748b;
+$icon-orange:  rgba(255, 105, 0, 0.1);
+$shadow-sm:    0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+$shadow-md:    0 4px 12px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
+
+// ── Page ──────────────────────────────────────────────────────────────────────
+.siemens-healthineers {
+  background: $page-bg;
+  min-height: 100vh;
+  color: $text-body;
+
+  .sh-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px 80px;
+  }
+}
+
+// ── Shared: Section heading ──────────────────────────────────────────────────
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+
+  .heading-accent {
+    display: inline-block;
+    width: 4px;
+    height: 48px;
+    background: $accent;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: $text-heading;
+    margin: 0;
+  }
+}
+
+// ── Shared: Surface card ─────────────────────────────────────────────────────
+.section-card {
+  background: $surface;
+  border: 1px solid $border;
+  border-radius: 16px;
+  box-shadow: $shadow-md;
+  padding: 48px;
+}
+
+// ── Shared: Body text ────────────────────────────────────────────────────────
+.body-text {
+  font-size: 17px;
+  line-height: 1.7;
+  color: $text-body;
+
+  &:not(:last-child) { margin-bottom: 16px; }
+}
+
+.text-orange { color: $accent; font-weight: 600; }
+.highlight   { color: $accent; font-weight: 600; }
+
+.sub-heading {
+  font-size: 18px;
+  font-weight: 600;
+  color: $text-heading;
+  margin-bottom: 16px;
+}
+
+.sub-heading-white {
+  font-size: 22px;
+  font-weight: 700;
+  color: $text-heading;
+  margin-bottom: 12px;
+}
+
+// ── Hero ─────────────────────────────────────────────────────────────────────
+.hero-section {
+  padding: 72px 0 56px;
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .case-study-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 105, 0, 0.08);
+    border: 1px solid rgba(255, 105, 0, 0.25);
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $accent;
+    width: fit-content;
+  }
+
+  .main-title {
+    font-size: 52px;
+    font-weight: 700;
+    color: $text-heading;
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  .title-orange { color: $accent; }
+
+  .description {
+    font-size: 18px;
+    color: $text-body;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .hero-tag {
+    background: $surface;
+    border: 1px solid $border;
+    border-radius: 8px;
+    padding: 5px 14px;
+    font-size: 13px;
+    color: $text-label;
+  }
+
+  .hero-image-card {
+    background: $surface;
+    border: 1px solid $border;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: $shadow-md;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+    }
+  }
+}
+
+// ── Platform ─────────────────────────────────────────────────────────────────
+.platform-section {
+  margin-bottom: 80px;
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .stat-card {
+    background: $surface;
+    border: 1px solid $border;
+    border-radius: 14px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    box-shadow: $shadow-sm;
+  }
+
+  .stat-icon {
+    width: 48px;
+    height: 48px;
+    background: $icon-orange;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: $accent;
+  }
+
+  .stat-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: $text-heading;
+  }
+
+  .stat-label {
+    font-size: 13px;
+    color: $text-muted;
+  }
+}
+
+// ── Challenge ────────────────────────────────────────────────────────────────
+.challenge-section {
+  margin-bottom: 80px;
+
+  .challenge-card {
+    background: $surface;
+    border: 1px solid $border;
+    border-radius: 16px;
+    padding: 48px;
+    box-shadow: $shadow-md;
+  }
+
+  .section-intro { max-width: 680px; margin-bottom: 40px; }
+
+  .challenge-inner {
+    background: transparent;
+    border: 1px solid $border;
+    border-radius: 14px;
+    padding: 32px;
+  }
+
+  .progress-list { display: flex; flex-direction: column; gap: 20px; }
+  .progress-item { display: flex; flex-direction: column; gap: 6px; }
+
+  .progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: $text-body;
+  }
+
+  .progress-pct { font-size: 14px; font-weight: 600; color: $accent; }
+
+  .impact-card {
+    background: #fff8f5;
+    border: 1.5px solid rgba(255, 105, 0, 0.3);
+    border-radius: 14px;
+    padding: 24px;
+  }
+
+  .impact-card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .impact-dot { width: 10px; height: 10px; background: #fb2c36; border-radius: 50%; }
+
+  .impact-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #c10007;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+
+  .impact-desc { font-size: 14px; color: $text-body; margin-bottom: 20px; }
+
+  .impact-stats { display: flex; gap: 16px; }
+
+  .impact-stat {
+    flex: 1;
+    background: $surface;
+    border: 1px solid $border;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .impact-stat-value { font-size: 24px; font-weight: 700; color: $accent; }
+  .impact-stat-label { font-size: 13px; color: $text-muted; margin-top: 4px; }
+}
+
+// ── My Role ──────────────────────────────────────────────────────────────────
+.role-section {
+  margin-bottom: 80px;
+
+  .role-card {
+    background: $surface;
+    border: 1px solid $border;
+    border-radius: 16px;
+    padding: 48px;
+    box-shadow: $shadow-md;
+  }
+
+  .role-intro { margin-bottom: 40px; }
+
+  .role-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    position: relative;
+    margin-bottom: 40px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 32px;
+      left: calc(12.5% + 16px);
+      right: calc(12.5% + 16px);
+      border-top: 1.5px dashed rgba(255, 105, 0, 0.4);
+      z-index: 0;
+    }
+  }
+
+  .role-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .role-step-icon {
+    width: 64px;
+    height: 64px;
+    background: $accent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(255, 105, 0, 0.3);
+  }
+
+  .role-step-title { font-size: 16px; font-weight: 600; color: $text-heading; margin: 0; }
+  .role-step-desc  { font-size: 13px; color: $text-muted; margin: 0; }
+
+  .contributions {
+    border-top: 1px solid $border;
+    padding-top: 28px;
+  }
+
+  .contributions-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: $text-label;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 12px;
+  }
+
+  .contributions-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+
+  .contrib-tag {
+    background: rgba(255, 105, 0, 0.06);
+    border: 1px solid rgba(255, 105, 0, 0.2);
+    border-radius: 100px;
+    padding: 5px 14px;
+    font-size: 13px;
+    color: $accent;
+    font-weight: 500;
+  }
+}
+
+// ── Design Principles ────────────────────────────────────────────────────────
+.principles-section {
+  margin-bottom: 80px;
+
+  .principle-card {
+    background: transparent;
+    border: 1px solid $border;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    height: 100%;
+    box-shadow: $shadow-sm;
+    transition: box-shadow 0.2s;
+
+    &:hover {
+      box-shadow: $shadow-md;
+
+      .principle-num { color: $accent; }
+    }
+  }
+
+  .principle-num {
+    font-size: 28px;
+    font-weight: 700;
+    color: $border-alt;
+    flex-shrink: 0;
+    line-height: 1;
+    transition: color 0.2s;
+  }
+
+  .principle-icon {
+    width: 40px;
+    height: 40px;
+    background: $icon-orange;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: $accent;
+    flex-shrink: 0;
+  }
+
+  .principle-body {
+    flex: 1;
+
+    h4 { font-size: 16px; font-weight: 600; color: $text-heading; margin: 0 0 6px; }
+    p  { font-size: 14px; color: $text-body; line-height: 1.6; margin: 0; }
+  }
+}
+
+// ── Design Approach ──────────────────────────────────────────────────────────
+.approach-section {
+  margin-bottom: 80px;
+
+  .approach-block {
+    background: $surface;
+    border: 1px solid $border;
+    border-radius: 16px;
+    padding: 48px;
+    margin-bottom: 24px;
+    box-shadow: $shadow-sm;
+
+    &:last-child { margin-bottom: 0; }
+  }
+
+  .approach-block-header {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-bottom: 28px;
+
+    h3 { font-size: 22px; font-weight: 700; color: $text-heading; margin: 0 0 10px; }
+    p  { font-size: 16px; color: $text-body; line-height: 1.7; margin: 0; }
+  }
+
+  .approach-icon {
+    width: 48px;
+    height: 48px;
+    background: $accent;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #fff;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(255, 105, 0, 0.25);
+  }
+
+  .flow-diagram {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0;
+    width: 80%;
+    margin: 24px auto 0;
+  }
+
+  .flow-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    min-width: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid $border;
+      display: block;
+    }
+  }
+
+  .flow-step-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: $text-body;
+    text-align: center;
+    letter-spacing: 0.01em;
+  }
+
+  .flow-arrow {
+    color: $accent;
+    font-size: 28px;
+    font-weight: 700;
+    flex-shrink: 0;
+    padding: 0 6px;
+    margin-bottom: 30px;
+  }
+
+  .screen-carousel {
+    margin-bottom: 8px;
+    display: flex;
+      align-items: center;
+      gap: 20px;
+
+    .carousel-slide {
+      padding: 40px;
+    }
+
+    .slick-list {
+      flex: 1;
+      min-width: 0;
+      box-shadow: none;
+    }
+
+    .carousel-arrow {
+      position: static;
+      transform: none;
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: $surface;
+      border: 1.5px solid $border;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      color: $accent;
+      cursor: pointer;
+      outline: none;
+      transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+
+      &:focus,
+      &:focus-visible,
+      &:active { outline: none; box-shadow: none; }
+
+      &:hover {
+        background: $accent;
+        border-color: $accent;
+        color: #fff;
+        box-shadow: 0 4px 12px rgba(255, 105, 0, 0.3);
+      }
+    }
+
+    .slick-dots {
+      bottom: -28px;
+
+      li button {
+        background: $border-alt;
+        opacity: 1;
+        border-radius: 4px;
+        width: 20px;
+        height: 4px;
+      }
+
+      li.slick-active button {
+        background: $accent;
+        width: 28px;
+      }
+    }
+  }
+
+  .approach-image {
+    background: $surface-soft;
+    border: 1px solid $border;
+    border-radius: 12px;
+    overflow: hidden;
+
+    img { width: 100%; display: block; }
+  }
+
+  .approach-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 15px;
+      color: $text-body;
+
+      &::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background: $accent;
+        border-radius: 50%;
+        margin-top: 7px;
+        flex-shrink: 0;
+      }
+    }
+  }
+
+  .density-card {
+    background: transparent;
+    border: 1px solid $border;
+    border-radius: 12px;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    box-shadow: $shadow-sm;
+  }
+
+  .density-card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: $text-heading;
+    padding-left: 14px;
+    border-left: 4px solid $accent;
+    margin: 0;
+  }
+
+  .density-card-desc { font-size: 13px; color: $text-muted; margin: auto 0 0; }
+
+  .density-levels { display: flex; flex-direction: column; gap: 6px; }
+
+  .density-level {
+    border-radius: 4px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    width: 100%;
+    border-style: solid;
+  }
+
+  .level-critical {
+    height: 32px;
+    background: #ffe2e2;
+    border: 1.5px solid #fb2c36;
+    color: #c10007;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .level-warning  {
+    height: 24px;
+    background: #fff7ed;
+    border: 1px solid #ff8904;
+    color: #ca3500;
+    font-weight: 400;
+  }
+  .level-info     {
+    height: 20px;
+    background: #eff6ff;
+    border: 1px solid #8ec5ff;
+    color: #155dfc;
+    font-weight: 400;
+  }
+  .level-normal   {
+    height: 16px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    color: $text-label;
+    font-weight: 400;
+    padding-left: 8px;
+  }
+
+  .disclosure-box {
+    background: $surface;
+    border: 1px solid $border;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 14px;
+  }
+
+  .disclosure-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    color: $text-body;
+    border-bottom: 1px solid $border;
+  }
+
+  .disclosure-label { font-size: 14px; color: $text-body; }
+
+  .disclosure-icon { color: $accent; font-size: 13px; }
+
+  .disclosure-children {
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 12px;
+    color: $text-muted;
+    border-left: 2px solid $accent;
+    margin: 8px 12px 10px;
+    padding-left: 12px;
+    border-radius: 0;
+  }
+
+  .disclosure-indent { padding-left: 12px; }
+
+  .dual-views { display: flex; gap: 12px; }
+
+  .dual-view {
+    flex: 1;
+    background: $surface;
+    border: 1px solid $border;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: $text-muted;
+  }
+
+  .table-rows { width: 100%; display: flex; flex-direction: column; gap: 4px; }
+  .table-row  { height: 8px; background: $border; border-radius: 2px; }
+
+  .bars {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .bar { width: 12px; border-radius: 2px 2px 0 0; }
+}
+
+// ── Impact & Outcomes ────────────────────────────────────────────────────────
+.outcomes-section {
+  margin-bottom: 80px;
+
+  .outcomes-grid {
+
+  .outcome-card {
+    background: transparent;
+    border: 1px solid $border;
+    border-radius: 14px;
+    padding: 24px;
+    height: 100%;
+    box-shadow: $shadow-sm;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: box-shadow 0.2s, border-color 0.2s;
+
+    &:hover {
+      box-shadow: $shadow-md;
+      border-color: $border-alt;
+    }
+  }
+
+  .outcome-icon {
+    width: 48px;
+    height: 48px;
+    background: $icon-orange;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: $accent;
+  }
+
+  h4 { font-size: 15px; font-weight: 600; color: $text-heading; margin: 0; }
+  p  { font-size: 15px; color: $text-body; margin: 0; line-height: 1.6; }
+  }
+}
+
+// ── Confidentiality Note ─────────────────────────────────────────────────────
+.confidentiality-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: $surface-soft;
+  border: 1px solid $border;
+  border-radius: 14px;
+  padding: 28px 32px;
+  max-width: 800px;
+  margin: 0 auto;
+
+  .lock-icon { font-size: 18px; color: $text-muted; margin-top: 2px; flex-shrink: 0; }
+
+  h4 { font-size: 14px; font-weight: 600; color: $text-heading; margin: 0 0 6px; }
+  p  { font-size: 13px; color: $text-body; margin: 0; line-height: 1.6; }
+}

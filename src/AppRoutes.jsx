@@ -11,6 +11,7 @@ import About from "./pages/About";
 
 import DB_Navigator from "./pages/DB-navigator";
 import Enhancing_Bonds_Remotely from "./pages/enhancing-bonds-remotely";
+import Siemens_Healthineers from "./pages/siemens-healthineers";
 
 
 const ScrollToTop = () => {
@@ -33,7 +34,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/db-navigator" element={<DB_Navigator />} />
         <Route path="/enhancing-bonds-remotely" element={<Enhancing_Bonds_Remotely />} />
-        <Route path="/siemens-healthineers" element={<SiemensHealthineers />} />
+        <Route path="/siemens-healthineers" element={<Siemens_Healthineers />} />
         <Route path="/sustain-feed" element={<SustainFeed />} />
         <Route path="/melody-motion" element={<DbNavigator />} />
         <Route path="/cyclist-digital-support" element={<CyclistSupport />} />
